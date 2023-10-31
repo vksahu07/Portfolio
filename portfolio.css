@@ -1,0 +1,361 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+body {
+      background-color: rgb(16, 14, 14);
+      color: white;
+}
+
+nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 60px;
+      background-color: #5d5dc11a;
+
+}
+
+nav ul {
+      display: flex;
+      justify-content: center;
+}
+
+nav ul li {
+      list-style: none;
+      margin: 0 23px;
+      text-decoration: none;
+}
+
+nav ul li a {
+      padding: 5px;
+      border-radius: 10px;
+      text-decoration: none;
+
+      color: aqua;
+}
+
+nav ul li a:hover {
+
+
+      color: rgb(7, 7, 7);
+      font-size: 1.2rem;
+      background-color: aqua;
+      transition-duration: 0.4s;
+
+}
+
+.left {
+      font-family: 'Lobster', sans-serif;
+      font-size: 2.5rem;
+      color: rgb(224, 235, 235);
+      padding-left: 15px;
+
+}
+
+.right {
+      font-size: 1.1rem;
+}
+
+.firstsection {
+      font-family: 'Lora', serif;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin: 0;
+}
+
+.firstsection>div {
+      width: 25%;
+      padding: 0;
+      margin: 80px;
+      /* background-color: red; */
+
+}
+
+.leftsection {
+      /* background-color: red; */
+      font-size: 2.7rem;
+
+
+}
+
+.rightsection img {
+      width: 80%;
+      margin: 0;
+      box-shadow: 4px 4px 2px aqua;
+
+}
+
+.color {
+      color: aqua;
+}
+
+#eleme {
+      color: aqua;
+}
+
+#element {
+      color: aqua;
+}
+
+.secondsection {
+      max-width: 75vw;
+      margin: auto;
+      height: 50vh;
+
+
+}
+
+main hr {
+      margin: 20px 7%;
+
+}
+
+.text-grey {
+      color: gray;
+}
+
+.secondsection .box {
+      background-color: white;
+      width: 75vw;
+      height: 2px;
+      margin: 55px 0;
+      display: flex;
+
+}
+
+.secondsection .vertical {
+      height: 50px;
+      width: 1px;
+      background-color: white;
+      margin: 0 115px;
+}
+
+.image-top {
+      width: 30px;
+
+      width: 43px;
+      position: relative;
+      padding-top: -27px;
+      top: -46px;
+      left: -21px;
+}
+
+.vertical-title {
+
+      position: relative;
+      top: 11px;
+      left: -22px;
+
+}
+
+.vertical-desc {
+
+      position: relative;
+      width: 130px;
+      top: 17px;
+      color: gray;
+      left: -22px;
+
+}
+
+footer {
+      background-color: rgb(19, 24, 24);
+      /* height: 233px; */
+}
+
+.footer {
+      display: flex;
+      padding: 23px 122px;
+      justify-content: space-evenly;
+}
+
+.footer ul {
+      list-style: none;
+}
+
+.footer>div {
+      width: 220px;
+}
+
+footer .footer-rights {
+      text-align: center;
+      color: gray;
+      padding: 5px;
+      background-color: rgb(0, 0, 0);
+}
+
+.footer-first {
+      text-decoration: underline;
+      font-weight: bolder;
+      font-size: 1.2rem;
+}
+
+.leftsection .buttons {
+      padding:  0;
+}
+
+.btn a {
+      padding: 9px 4px;
+      color: black;
+      background-color: aqua;
+      border: 2px solid white;
+      border-radius: 9px;
+      font-weight: bold;
+      font-size: 0.9rem;
+      text-decoration: none;
+
+}
+
+.btn a:hover {
+      box-shadow: 3px 3px 5px aqua;
+      transition-duration: 0.3s;
+      font-size: 1.0rem;
+}
+
+.btn1 {
+      background-color: #1a1414;
+      color: white;
+      border-radius: 9px;
+      font-weight: bold;
+      font-size: 0.9rem;
+      padding: 9px 4px;
+      border: 2px solid white;
+}
+
+.btn1:hover {
+      font-size: 1.0rem;
+      transition-duration: 0.3s;
+}
+@media screen and (max-width:1240px) and (min-width:200px) {
+      .left {
+            font-size: 1.3rem;
+            padding-left: 0;
+      }
+
+      .right {
+            font-size: 11.9px;
+      }
+      nav ul li{
+            margin: 0;
+      }
+
+      nav ul li a {
+            margin: -57x;
+            font-size: 13.0px;
+      }
+            nav ul li a:hover {
+      
+      
+                  font-size: 13.2px;
+                 
+      
+            }
+
+      .firstsection>div {
+            /* padding: 0 40px; */
+            width: 45%;
+            margin: 0;
+      }
+
+      .leftsection {
+            /* background-color: red; */
+            font-size: 1.5rem;
+      }
+
+      .firstsection {
+            margin: 22px 0;
+      }
+
+      .rightsection img {
+            width: 100%;
+            margin: -15px
+      }
+      .btn1{
+            margin-top: 14px;
+      }
+
+      .btn a{
+            padding: 9px 4px;
+            font-size: 13.5px;
+            margin: 5px 0;
+            text-decoration: none;
+          
+      }
+      .btn a:hover {
+            box-shadow: 3px 3px 5px aqua;
+            transition-duration: 0.3s;
+            font-size: 12.4px;
+       }
+
+    
+
+      h1 {
+            font-size: 0.9rem;
+      }
+
+      .text-grey {
+            font-size: 9.5px;
+      }
+
+      main hr {
+            margin: 4px ;
+      }
+
+      .vertical-title {
+            font-size: 13.9px;
+            top: 2px;
+      }
+
+      .vertical-desc {
+
+            font-size: 10.2px;
+            width: 40px;
+            top: 7px;
+      }
+            .secondsection {
+                  max-width: 83vw;
+                
+                  height: 45vh;
+            }
+
+      .secondsection .vertical {
+
+            margin: 1px 37px;
+            height: 35px;
+      }
+
+      .secondsection .box {
+            background-color: white;
+            width: 100vw;
+            height: 2px;
+            margin: 55px -35px;
+            display: flex;
+      }
+
+      .image-top {
+
+            width: 35px;
+
+      }
+
+      .footer {
+
+            padding: 0px 0px;
+
+      }
+
+      .footer-first {
+
+            font-size: 13.2px;
+      }
+            footer .footer-rights {
+                  font-size: 12.5px;
+            }
+            .footer ul li{
+                  font-size: 12.5px;
+            }
+}
