@@ -85,7 +85,9 @@ nav ul li a:hover {
 .rightsection img {
       width: 80%;
       margin: 0;
+      padding: 2px;
       box-shadow: 4px 4px 2px aqua;
+     
 
 }
 
@@ -141,6 +143,7 @@ main hr {
       padding-top: -27px;
       top: -46px;
       left: -21px;
+      
 }
 
 .vertical-title {
