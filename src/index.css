@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-slate-navy-50: #f8fafc;
+  --color-slate-navy-100: #f1f5f9;
+  --color-slate-navy-200: #e2e8f0;
+  --color-slate-navy-300: #cbd5e1;
+  --color-slate-navy-400: #94a3b8;
+  --color-slate-navy-500: #64748b;
+  --color-slate-navy-600: #475569;
+  --color-slate-navy-700: #334155;
+  --color-slate-navy-800: #1e293b;
+  --color-slate-navy-900: #0f172a;
+  --color-slate-navy-950: #030712;
+
+  --color-teal-accent-50: #f0fdfa;
+  --color-teal-accent-100: #ccfbf1;
+  --color-teal-accent-200: #99f6e4;
+  --color-teal-accent-300: #5eead4;
+  --color-teal-accent-400: #2dd4bf;
+  --color-teal-accent-500: #14b8a6;
+  --color-teal-accent-600: #0d9488;
+  --color-teal-accent-700: #0f766e;
+  --color-teal-accent-800: #115e59;
+  --color-teal-accent-900: #134e4a;
+  --color-teal-accent-950: #042f2e;
+
+  --font-sans: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+@utility neon-glow-teal {
+  box-shadow: 0 0 20px rgba(20, 184, 166, 0.1);
+}
+
+@utility neon-glow-teal-hover {
+  transition: all 0.3s ease;
+  &:hover {
+    box-shadow: 0 0 25px rgba(20, 184, 166, 0.25);
+    border-color: rgba(20, 184, 166, 0.4);
+  }
+}
+
+@utility grid-pattern {
+  background-size: 40px 40px;
+  background-image: linear-gradient(to right, rgba(30, 41, 59, 0.05) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(30, 41, 59, 0.05) 1px, transparent 1px);
+}
+
+/* Custom scrollbar for clean premium UI */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+.dark ::-webkit-scrollbar-track {
+  background: #030712;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #1e293b;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0d9488;
+}
+
+/* Offset scroll navigation for sticky navbar */
+section {
+  scroll-margin-top: 5.5rem;
+}
