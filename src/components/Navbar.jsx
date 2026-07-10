@@ -56,10 +56,18 @@ export default function Navbar({ theme, toggleTheme }) {
 
   const handleClick = (e, href) => {
     e.preventDefault();
-    setIsOpen(false);
     const target = document.querySelector(href);
     if (target) {
-      target.scrollIntoView({ behavior: 'smooth' });
+      if (isOpen) {
+        setIsOpen(false);
+        // Delay the scroll on mobile to allow the menu collapse transition
+        // to begin and avoid interrupting the browser's smooth scroll.
+        setTimeout(() => {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }, 150);
+      } else {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
     }
   };
 
