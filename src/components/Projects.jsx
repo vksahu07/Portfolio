@@ -31,6 +31,15 @@ const projects = [
     github: 'https://github.com/vksahu07/proshop',
     type: 'shop',
   },
+  {
+    title: 'QuickStay',
+    subtitle: 'Luxury Hotel & Room Booking Platform',
+    description: 'Designed and built a complete hotel booking and property management system. Features secure user/owner authentication via Clerk, automated Mongoose schemas for hotels, rooms, and bookings, and a dynamic dashboard showcasing real-time booking analytics and revenue calculations. Leveraged Cloudinary for efficient property image hosting, Vercel for serverless deployment configurations, and Stripe APIs for secure booking transaction processing.',
+    tech: ['React.js', 'Clerk Auth', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS'],
+    live: 'https://hotel-booking-frontend-psi-bay.vercel.app/',
+    github: 'https://github.com/vksahu07/hotel-booking',
+    type: 'hotel',
+  },
 ];
 
 // Helper component for SVG Mockup Placeholders to give high-end look
@@ -96,6 +105,39 @@ function ProjectMockup({ type }) {
         <rect x="68" y="118" width="80" height="4" rx="2" fill="#475569" />
         <rect x="210" y="104" width="60" height="26" rx="4" fill="#0D9488" />
         <rect x="222" y="115" width="36" height="4" rx="2" fill="#E2E8F0" />
+      </svg>
+    );
+  }
+
+  if (type === 'hotel') {
+    return (
+      <svg className="w-full h-full bg-slate-950/60 p-4" viewBox="0 0 300 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+        {/* Hotel Booking Mockup */}
+        <rect x="10" y="10" width="280" height="140" rx="8" fill="#0B0F19" stroke="#1E293B" strokeWidth="2" />
+        <rect x="10" y="10" width="280" height="24" rx="8" fill="#1E293B" />
+        <circle cx="25" cy="22" r="4" fill="#EF4444" />
+        <circle cx="37" cy="22" r="4" fill="#F59E0B" />
+        <circle cx="49" cy="22" r="4" fill="#10B981" />
+        <text x="70" y="26" fill="#94A3B8" fontSize="10" fontFamily="monospace">QuickStay Booking</text>
+        
+        {/* Search header / hero */}
+        <rect x="20" y="42" width="260" height="32" rx="4" fill="#1E293B" />
+        <text x="30" y="54" fill="#E2E8F0" fontSize="8" fontWeight="bold">Find your perfect stay</text>
+        <rect x="30" y="60" width="100" height="8" rx="2" fill="#0F172A" />
+        <rect x="140" y="60" width="60" height="8" rx="2" fill="#0F172A" />
+        <rect x="210" y="58" width="60" height="12" rx="3" fill="#0D9488" />
+        <text x="224" y="66" fill="#CCFBF1" fontSize="6" fontWeight="bold">Search</text>
+
+        {/* Featured Hotels */}
+        <rect x="20" y="82" width="125" height="58" rx="4" fill="#1E293B" />
+        <rect x="25" y="87" width="115" height="28" rx="2" fill="#0F172A" />
+        <text x="25" y="123" fill="#E2E8F0" fontSize="7" fontWeight="bold">Urbanza Suites</text>
+        <text x="25" y="132" fill="#10B981" fontSize="6">$399 / night</text>
+
+        <rect x="155" y="82" width="125" height="58" rx="4" fill="#1E293B" />
+        <rect x="160" y="87" width="115" height="28" rx="2" fill="#0F172A" />
+        <text x="160" y="123" fill="#E2E8F0" fontSize="7" fontWeight="bold">Grand Hyatt</text>
+        <text x="160" y="132" fill="#10B981" fontSize="6">$299 / night</text>
       </svg>
     );
   }
